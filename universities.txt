@@ -1,0 +1,100 @@
+Massachusetts Institute of Technology
+Massachusetts
+43498
+4503
+Carnegie Mellon University
+Pennsylvania
+46962
+6279
+Stanford University
+California
+43245
+7063
+University of California Berkeley
+California
+12864
+4833
+University of Illinois Urbana Champaign
+Illinois
+15258
+1836
+Cornell University
+New York
+45359
+2098
+University of Washington
+Washington
+12283
+5246
+Princeton University
+New Jersey
+40170
+2672
+Georgia Institute of Technology
+Georgia
+10650
+5248
+University of Texas Austin
+Texas
+9790
+6882
+California Institute of Technology
+California
+41538
+4034
+University of Wisconsin Madison
+Wisconsin
+10403
+1846
+University of California Los Angeles
+California
+12696
+4837
+University of Michigan Ann Arbor
+Michigan
+13819
+1839
+University of California San Diego
+California
+13234
+4836
+Columbia University
+New York
+49138
+2116
+University of Maryland College Park
+Maryland
+9162
+5814
+Harvard University
+Massachusetts
+42292
+3434
+University of Pennsylvania
+Pennsylvania
+45890
+2926
+Brown University
+Rhode Island
+45612
+3094
+Purdue University West Lafayette
+Indiana
+9992
+1631
+Rice University
+Texas
+38941
+6609
+University of Southern California
+California
+46298
+4852
+Yale University
+Connecticut
+44000
+3987
+Duke University
+North Carolina
+45476
+5156
