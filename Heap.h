@@ -2,7 +2,6 @@
  Team 6
  */
 
-
 // Specification file for the Heap class
 #ifndef HEAP_H
 #define HEAP_H

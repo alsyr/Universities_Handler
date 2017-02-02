@@ -2,7 +2,6 @@
  Team 6
  */
 
-
 // Specification file for the Hashed Table class
 #ifndef HASH_H
 #define HASH_H

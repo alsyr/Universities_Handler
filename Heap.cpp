@@ -2,11 +2,9 @@
  Team 6
  */
 
-
 /*
  The heap keeps update the most searched universities
  */
-
 
 // Implementation file for the Heap class
 #include <iostream>  // For cout and NULL
@@ -14,7 +12,6 @@
 #include "Heap.h"
 
 using namespace std;
-
 
 /**~*~*
  Constructor
@@ -31,7 +28,6 @@ Heap::Heap()
     numElements = 0;
     arrayLength = TABLE_SIZE;
 }
-
 
 //---------------------------------------
 // Reheap after inserting item
@@ -57,7 +53,6 @@ void Heap::reheapUp(int root, int bottom)
         }
     }
 }
-
 
 //---------------------------------------
 // Reheap after removing item
@@ -100,7 +95,6 @@ void Heap::reheapDown(int root, int bottom)
     }
 }
 
-
 //---------------------------------------
 // Add an item to the heap
 //---------------------------------------
@@ -117,7 +111,6 @@ void Heap::insertHeap(University *univIn)
     }
 }
 
-
 //---------------------------------------
 // Return number of elements in the heap
 //---------------------------------------
@@ -125,7 +118,6 @@ int Heap::getNumElementsHeap()
 {
     return numElements;
 }
-
 
 //---------------------------------------
 // Print all the elements in the heap
@@ -139,7 +131,6 @@ void Heap::printAllHeap()
     }
 }
 
-
 //---------------------------------------
 // Print all the elements in the heap
 //---------------------------------------
@@ -151,7 +142,6 @@ void Heap::printHeapTop()
     cout << "\n\tTuition : " << theHeap[0]->university->tuition;
     cout << "\n\tCode    : " << theHeap[0]->university->code << endl << endl;
 }
-
 
 //---------------------------------------
 // Delete item at the root
@@ -165,7 +155,6 @@ void Heap::deleteTop()
     reheapDown(0, numElements - 1);
 }
 
-
 //---------------------------------------
 // Get item at the root
 //---------------------------------------
@@ -174,7 +163,6 @@ University *Heap::getTop()
     University *temp = theHeap[0]->university;
     return temp;
 }
-
 
 //---------------------------------------
 // Sort the Heap
@@ -191,7 +179,6 @@ void Heap::sortHeap()
         reheapUp(0, i);
     }
 }
-
 
 /**~*~*
  Destructor

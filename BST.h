@@ -2,7 +2,6 @@
  Team 6
  */
 
-
 // Specification file for the BST class
 #ifndef BST_H
 #define BST_H
@@ -30,7 +29,7 @@ public:
     
     // Destructor
     ~BST();
-    
+
     // BST operations
     void insertBST(University *univIn);
     bool searchBST(int target, University &univ);

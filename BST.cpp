@@ -2,7 +2,6 @@
  Team 6
  */
 
-
 /*
  BST keeps sorted the universities by their unique key, the code
  */
@@ -14,7 +13,6 @@
 
 using namespace std;
 
-
 /**~*~*
  Constructor
  *~**/
@@ -24,7 +22,6 @@ BST::BST()
     count = 0;
 }
 
-
 /**~*~*
  This function calls a recursive function to traverse the
  tree in inorder
@@ -33,7 +30,6 @@ void BST::inorderTraverse() const
 {
     _BST_InorderTraverse(root);
 }
-
 
 /**~*~*
  Inorder Traversal of the Binary Tree by recursion:
@@ -49,7 +45,6 @@ void BST::_BST_InorderTraverse(BST_Node *root) const
     }
 }
 
-
 /**~*~*
  Insert data into a BST
  *~**/
@@ -64,7 +59,6 @@ void BST::insertBST(University *univIn)
     newNode->university  = univIn;
     newNode->left  = NULL;
     newNode->right = NULL;
-
 
     if (!root) // tree is empty
         root = newNode;
@@ -90,7 +84,6 @@ void BST::insertBST(University *univIn)
     count++;
 }
 
-
 /**~*~*
  This function traverses the binary tree in postorder and deletes every node
  *~**/
@@ -104,7 +97,6 @@ void BST::_BST_Destroy(BST_Node *root)
     }
     return;
 }
-
 
 /**~*~*
  Search a BST for a given target: if found, returns true and passes back
@@ -120,7 +112,6 @@ bool BST::searchBST(int target, University &univ)
     }
     return false;
 }
-
 
 /**~*~*
  Locates the node that contains a given target in a BST:
@@ -148,7 +139,6 @@ BST::BST_Node* BST::_search(int target)
     return NULL; // not found
 }
 
-
 /**~*~*
  This function calls a recursive function to prints
  the tree as an intented list
@@ -159,7 +149,6 @@ void BST::indentedTraverse() const
         cout << endl;
         _BST_IndentedTraverse(root, 1);
 }
-
 
 /**~*~*
  This function traverse recursively the tree Right-Root-Left
@@ -181,7 +170,6 @@ void BST::_BST_IndentedTraverse(BST_Node *root, int level) const
         _BST_IndentedTraverse(root->left, level+1);
 }
 
-
 /*************************************
  This function find the smallest
  number(code) from the root of the tree
@@ -190,7 +178,6 @@ int BST::findSmallest()
 {
 	return _findSmallest(root);
 }
-
 
 /*************************************
  This function find the smallest
@@ -213,7 +200,6 @@ int BST::_findSmallest(BST_Node *ptr)
 	}
 }
 
-
 /*************************************
  This function call the private function
  to remove the node
@@ -222,7 +208,6 @@ void BST::removeNode(int target)
 {
 	_removeNode(target, root);
 }
-
 
 /*************************************
  This function bridge between
@@ -257,7 +242,6 @@ void BST::_removeNode(int target, BST_Node *parent)
 		}
 	}
 }
-
 
 /*************************************
  This function call the private function
@@ -305,7 +289,6 @@ void BST::removeRootMatch()
 		}
 	}
 }
-
 
 /*************************************
  This function actually
@@ -362,7 +345,6 @@ void BST::removeMatch(BST_Node *parent, BST_Node *match, bool left)
 		}
 	}
 }
-
 
 /**~*~*
  Destructor

@@ -2,7 +2,6 @@
  Team 6
  */
 
-
 // Specification file for the List class
 #ifndef LIST_h
 #define LIST_h

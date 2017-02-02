@@ -2,11 +2,9 @@
  Team 6
  */
 
-
 /*
  List is the task manager of all 3 structures: the heap, the hash and the bst
  */
-
 
 // Implementation file for the List class
 #include <iostream>  // For cout and NULL
@@ -28,7 +26,6 @@ List::List()
     pHeap = new Heap;
 }
 
-
 /**~*~*
  Insert data into the list
  Everytime a university is added to the program,
@@ -42,7 +39,6 @@ void List::insertList(University *univIn)
     count++;
 }
 
-
 /**~*~*
  Search a Listed Table for a given target by getting the home address associated with.
  Then it is searched in the hashed table.
@@ -52,7 +48,6 @@ bool List::searchListForDuplicate(int target, University &univ)
 {
     return pHash->searchHash(target, univ);
 }
-
 
 /**~*~*
  Search a Listed Table for a given target by getting the home address associated with.
@@ -68,7 +63,6 @@ bool List::searchList(int target, University &univ)
     return exist;
 }
 
-
 /**~*~*
  List data in hashed table sequence.
  *~**/
@@ -78,7 +72,6 @@ void List::displayList()
     pHash->printHash();
     cout << "********************************************************************\n";
 }
-
 
 /**~*~*
  List data in key sequence by using the inorder traversal of the bst.
@@ -90,7 +83,6 @@ void List::displaySortedList()
     cout << "********************************************************************\n";
 }
 
-
 /**~*~*
  Print indented tree of the bst.
  *~**/
@@ -101,7 +93,6 @@ void List::displayIndentedList()
     cout << endl;
     cout << "********************************************************************\n";
 }
-
 
 /**~*~*
  Print statistics of the hashed table, such as number 
@@ -123,7 +114,6 @@ void List::deleteList(int target)
 	pTree->removeNode(target);
 }
 
-
 /**~*~*
 Display the most frequently searched university by using the root of the heap.
  *~**/
@@ -137,7 +127,6 @@ void List::displayMostSearched()
     cout << "********************************************************************\n";
 }
 
-
 /**~*~*
  Write an output file based on hash table sequence
  *~**/
@@ -148,7 +137,6 @@ void List::writingTxt()
 	cout << "\tDone! check the 'output' txt in the repertory file" << endl;
     cout << "********************************************************************\n";
 }
-
 
 /**~*~*
  Destructor

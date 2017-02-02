@@ -2,11 +2,9 @@
  Team 6
  */
 
-
 /*
  Object is the data shared by all structures of the program
  */
-
 
 // Specification file for the Hashed Table class
 #ifndef OBJECT_h

@@ -1,8 +1,6 @@
 /*
  Team 6
  */
-
-
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -31,7 +29,6 @@ void addUniversity(List *theList);
 bool readUniversities(List *theList);
 void searchUniversity(List *theList);
 string removeTrailingWhiteSpace(string str);
-
 
 int main( void )
 {
@@ -92,7 +89,6 @@ int main( void )
     return 0;
 }
 
-
 /**~*~*
  The menu function displays the menu
  *~**/
@@ -125,7 +121,6 @@ void menu()
     << "Enter your choice: ";
 }
 
-
 /**~*~*
  This function prompts the user to enter a character between the ones
  given into the parentheses(upper or lower case).
@@ -148,7 +143,6 @@ char getValidChoice()
     return input;
 }
 
-
 /**~*~*
  This function makes sure that the input is an int.
  If the input is not valid it prompts the user to enter
@@ -170,7 +164,6 @@ int getValidNum()
     
     return target;
 }
-
 
 //**************************************************
 // Definition of function readUniversities.
@@ -259,7 +252,6 @@ void addUniversity(List *theList)
         theList->insertList(univ);
 }
 
-
 //**************************************************
 // Definition of function removeTrailingWhiteSpace.
 // This function removes trailing white spaces at
@@ -277,7 +269,6 @@ string removeTrailingWhiteSpace(string str)
     }
     return str;
 }
-
 
 /**~*~*
  The searchUniversity searches by unique key

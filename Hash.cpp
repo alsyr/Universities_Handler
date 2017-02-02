@@ -2,7 +2,6 @@
  Team 6
  */
 
-
 /*
  The hash makes the search function of the global function faster
  */
@@ -15,7 +14,6 @@
 #include "Hash.h"
 
 using namespace std;
-
 
 /**~*~*
  Constructor
@@ -33,7 +31,6 @@ Hash::Hash()
     fullBuckets = 0;
 }
 
-
 /**~*
  hashFunction is the function
  which get int key and return
@@ -43,7 +40,6 @@ int Hash::hashFunc(int key)
 {
     return key % TABLE_SIZE;
 }
-
 
 /**~*~*
  Insert data into a Hashed Table
@@ -107,7 +103,6 @@ bool Hash::searchHash(int target, University &univ)
     return false;
 }
 
-
 /**~*~*
  Display the contents of the hash table as a list.
  *~**/
@@ -123,7 +118,6 @@ void Hash::displayHash()
         }
     }
 }
-
 
 /**~*~*
  Write an output file based on hash table sequence
@@ -153,7 +147,6 @@ void Hash::writing()
     outFile.close();
 }
 
-
 /**~*~*
  Print the hashed table by showing the bucket number, empty slots and indent synonyms.
  *~**/
@@ -176,7 +169,6 @@ void Hash::printHash()
     }
 }
 
-
 /**~*~*
  Show statistics, such as number of collisions,
  load factor and number of full buckets.
@@ -187,7 +179,6 @@ void Hash::statsHash()
     cout << setw(32) << left << "\tThe load factor is: " << setw(8) << right << (numberKeys/TABLE_SIZE)*100 << "%\n";
     cout << setw(32) << left << "\tThe number of full buckets is: " << setw(8) << right << fullBuckets << "\n";
 }
-
 
 /**~*
  delete the data from the table
@@ -224,7 +215,6 @@ void Hash::deleleteHash(int code)
     if(!found)
         cout << "School code " << code << " does not exist" << endl;
 }
-
 
 /**~*~*
  Destructor
