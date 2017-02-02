@@ -26,7 +26,6 @@ private:
 public:
     // Constructor
     BST();
-    
     // Destructor
     ~BST();
 
